@@ -88,7 +88,7 @@ local callbacks = fatality.callbacks;
 
 callbacks:add( "paint", on_paint )
 ```
-
+** **
 4 - Callback prototypes
 
 keyword | description | parameters
