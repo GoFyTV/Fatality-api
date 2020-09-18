@@ -100,9 +100,9 @@ events | call whenever the server sends an event to you ( e.g. player_hurt, bull
 registered_shot | call whenever a shot from the rage-/legitbot gets registered on the server | ( shot : shot_t)
 
 level_init | call once map and all entities have been initialized | ( )
-
-## <a name="render"></a>Render
 ** **
+## <a name="render"></a>Render
+
 ```java
 Member | Description
 
