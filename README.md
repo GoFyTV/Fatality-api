@@ -57,18 +57,18 @@ Index | Description
 
 ** **
 
-1 - What are callbacks ?
+1 - **What are callbacks ?**
 
 Callbacks are functions that get called within the main cheat whenever something happens ( e.g. whenever a frame gets rendered )
 ** **
-2 - Accessing the 'Callback' interface
+2 - **Accessing the 'Callback' interface**
 
 Accessing the interface is as easy as doing this:
 ```java
 local callbacks = fatality.callbacks;
 ```
 ** **
-3 - Adding a callback
+3 - **Adding a callback**
 
 Adding a callback can be done via the fatality.callbacks:add function.
 
@@ -89,7 +89,7 @@ local callbacks = fatality.callbacks;
 callbacks:add( "paint", on_paint )
 ```
 ** **
-4 - Callback prototypes
+4 - **Callback prototypes**
 
 keyword | description | parameters
 
@@ -122,7 +122,7 @@ indicator( x : float, y : float, text : string, is_active : boolean, bar_progres
 draw_hitgroup( player : csgo.player, matrices : csgo.matrix3x4_t, hitgroup : int, duration: float, col : csgo.color ) : void | renders specified hitgroup ( -1 for all hitboxes )
 
 screen_size( ) : csgo.vector2 | gets screen size
-
+** **
 Example usage
 
 ```java
@@ -144,5 +144,22 @@ end
 local callbacks = fatality.callbacks
 callbacks:add( "paint", "on_paint" )
 ```
+## <a name="input"></a>Input
+
+Index | Description
+
+1     | Accessing the 'Input' interface
+
+2     | input:is_key_down( key ) : bool
+** **
+1 - **Accessing the 'Input' interface**
+```java
+local input = fatality.input;
+```
+** **
+2 - **input:is_key_down( key ) : bool**
+
+type|name|description
+number( [key-codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) hex -> decimal )
 
 [back to Contents](#-1)
