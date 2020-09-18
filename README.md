@@ -162,4 +162,12 @@ local input = fatality.input;
 type|name|description
 number( [key-codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes) hex -> decimal )
 
+Example usage
+```java
+local input = fatality.input;
+
+-- 72 -> 0x47 -> G key
+local is_down = input:is_key_down(72)
+```
+
 [back to Contents](#-1)
