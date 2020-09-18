@@ -176,5 +176,13 @@ Member | Description
 
 calc_angle( point1 : [csgo.vector3](#vector3) , point2 : [csgo.vector3](#vector3) ) : [csgo.angle](#angle) | calculates the angle between two points
 
+Example usage
+```java
+-- Get math insance
+local math = fatality.math
+
+-- Calculates angle between two vectors
+local angle = math:calc_angle( csgo.vector3( 0, 0, 0 ), csgo.vector3( 100, 50, 300 ) )
+```
 
 [back to Contents](#-1)
