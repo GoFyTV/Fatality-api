@@ -102,7 +102,7 @@ registered_shot | call whenever a shot from the rage-/legitbot gets registered o
 level_init | call once map and all entities have been initialized | ( )
 
 ## <a name="render"></a>Render
-
+** **
 ```java
 Member | Description
 
