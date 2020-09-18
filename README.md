@@ -47,7 +47,7 @@
 
 Index | Description
 
-1     | What are callbacks ? |[Events](#events)|
+1     | What are callbacks ?
 
 2     | Accessing the 'Callback' interface
 
@@ -103,10 +103,9 @@ level_init | call once map and all entities have been initialized | ( )
 ** **
 ## <a name="render"></a>Render
 
-```java
 Member | Description
 
-rect_filled( x : float, y : float, width : float, height : float, col : csgo.color ) : void | filled rectangle
+rect_filled( x : float, y : float, width : float, height : float, col : [csgo.color](#color) ) : void | filled rectangle
 
 create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font | creates font and returns it
 
@@ -123,7 +122,6 @@ indicator( x : float, y : float, text : string, is_active : boolean, bar_progres
 draw_hitgroup( player : csgo.player, matrices : csgo.matrix3x4_t, hitgroup : int, duration: float, col : csgo.color ) : void | renders specified hitgroup ( -1 for all hitboxes )
 
 screen_size( ) : csgo.vector2 | gets screen size
-```
 
 Example usage
 
