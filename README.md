@@ -1,4 +1,5 @@
 # Fatality API
+<a name="-1"></a>
 
 |FATALITY|
 |--------|
