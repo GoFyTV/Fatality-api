@@ -44,7 +44,7 @@
 ---
 
 ## <a name="callback"></a>Callback
-```java
+
 Index | Description
 
 1     | What are callbacks ?
@@ -54,7 +54,7 @@ Index | Description
 3     | Adding a callback 
 
 4     | Callback protatypes 
-```
+
 ** **
 
 1 - What are callbacks ?
@@ -71,13 +71,13 @@ local callbacks = fatality.callbacks;
 3 - Adding a callback
 
 Adding a callback can be done via the fatality.callbacks:add function.
-```java
+
 type     |   name           | description
 
 string   | keyword          | defines when your function will be called
 
 function | function_to_call | defines what function will be called
-```
+
 Example usage:
 ```java
 function on_paint( )
@@ -91,7 +91,6 @@ callbacks:add( "paint", on_paint )
 
 4 - Callback prototypes
 
-```java
 keyword | description | parameters
 
 paint | call every frame ( render here! ) | ( )
@@ -101,7 +100,6 @@ events | call whenever the server sends an event to you ( e.g. player_hurt, bull
 registered_shot | call whenever a shot from the rage-/legitbot gets registered on the server | ( shot : shot_t)
 
 level_init | call once map and all entities have been initialized | ( )
-```
 
 ## <a name="render"></a>Render
 
@@ -110,7 +108,7 @@ Member | Description
 
 rect_filled( x : float, y : float, width : float, height : float, col : csgo.color ) : void | filled rectangle
 
-create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font | creates font and returns it
+create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font |[Events](#events)| creates font and returns it
 
 text( font : csgo.font, x : float, y : float, text : string, col : csgo.color ) : void | renders text with specified font
 
