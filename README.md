@@ -170,4 +170,11 @@ local input = fatality.input;
 local is_down = input:is_key_down(72)
 ```
 
+## <a name="math"></a>Math
+
+Member | Description
+
+calc_angle( point1 : [csgo.vector3](#vector3) , point2 : [csgo.vector3](#vector3) ) : [csgo.angle](#angle) | calculates the angle between two points
+
+
 [back to Contents](#-1)
