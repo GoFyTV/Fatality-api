@@ -105,6 +105,48 @@ level_init | call once map and all entities have been initialized | ( )
 
 ## <a name="render"></a>Render
 
+```java
+Member | Description
 
+rect_filled( x : float, y : float, width : float, height : float, col : csgo.color ) : void | filled rectangle
+
+create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font | creates font and returns it
+
+text( font : csgo.font, x : float, y : float, text : string, col : csgo.color ) : void | renders text with specified font
+
+rect_fade( x : float, y : float, width : float, height : float, col1 : csgo.color, col2 : csgo.color, horizontal : boolean ) : void | gradient filled rectangle
+
+rect( x : float, y : float, width : float, height : float, col : csgo.color ) : void | rectangle
+
+text_size( font : csgo.font, text : string ) : csgo.vector2 | gets size of specified text with specified font
+
+indicator( x : float, y : float, text : string, is_active : boolean, bar_progress : float ) : void | renders indicator with a bar below ( 0 - 1 / -1 for no bar )
+
+draw_hitgroup( player : csgo.player, matrices : csgo.matrix3x4_t, hitgroup : int, duration: float, col : csgo.color ) : void | renders specified hitgroup ( -1 for all hitboxes )
+
+screen_size( ) : csgo.vector2 | gets screen size
+```
+
+Example usage
+
+```java
+-- Get render instance
+local render = fatality.render
+
+-- Will be called every time a frame is rendered
+function on_paint( )
+
+    -- Create color
+    local dark_blue = csgo.color( 33, 27, 70, 255 )
+
+    -- Draw filled rectangle at position 10, 10 with size 100, 100
+    render:rect_filled( 10, 10, 100, 100, dark_blue )
+
+end
+
+-- Register all callback functions that should be called
+local callbacks = fatality.callbacks
+callbacks:add( "paint", "on_paint" )
+```
 
 [back to Contents](#-1)
