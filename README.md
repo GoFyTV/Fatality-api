@@ -29,6 +29,17 @@
 |[      Debug_overlay](#debug_overlay)|
 |[      Entity_list](#entity_list)|
 |[      Cvar](#cvar)|
+|Datatypes|
+|[      Color](#color)|
+|[      Game_event](#game_event)|
+|[      Vector3](#vector3)|
+|[      Vector2](#vector2)|
+|[      Angle](#angle)|
+|[      Matrix3x4_t](#matrix3x4_t)|
+|[      Font](#font)|
+|[      Convar](#convar)|
+|[      Entity](#entity)|
+|[            Player](#player)|
 
 ---
 
