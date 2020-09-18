@@ -47,7 +47,7 @@
 
 Index | Description
 
-1     | What are callbacks ?
+1     | What are callbacks ? |[Events](#events)|
 
 2     | Accessing the 'Callback' interface
 
@@ -108,7 +108,7 @@ Member | Description
 
 rect_filled( x : float, y : float, width : float, height : float, col : csgo.color ) : void | filled rectangle
 
-create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font |[Events](#events)| creates font and returns it
+create_font( font_family : string, size : int, weight : int, outline : boolean ) : csgo.font | creates font and returns it
 
 text( font : csgo.font, x : float, y : float, text : string, col : csgo.color ) : void | renders text with specified font
 
