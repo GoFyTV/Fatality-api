@@ -185,4 +185,34 @@ local math = fatality.math
 local angle = math:calc_angle( csgo.vector3( 0, 0, 0 ), csgo.vector3( 100, 50, 300 ) )
 ```
 
+## <a name="config"></a>Config
+
+Member | Description
+
+add_item( name : string, default_value : float ) : [fatality.value](#value) | adds an item intro the config map
+
+get_item( name : string ) : [fatality.value](#value) | gets an item intro the config map
+
+**UPDATE**
+
+config items for weapons must now be accessed with this function:
+
+get_weapon_setting( weapon name : string , item : string ) : [fatality.value](#value)
+
+weapon names are : autosniper, scout, awp, heavy_pistol, pistol, other
+
+the config items are listed as string on the right side of this:
+
+```java
+VARTYPE( hitchance, name, "hitchance" );
+VARTYPE( damage_accuracy, name, "damage_accuracy" );
+VARTYPE( mindmg, name, "mindmg" );
+VARTYPE( autostop, name, "autostop" );
+VARTYPE( autostop_on_key, name, "autostop_on_key" );
+VARTYPE( autostop_lethal, name, "autostop_lethal" );
+VARTYPE( fallback_mode, name, "fallback_mode" );
+VARTYPE( autorevolver, name, "autorevolver" );
+
+```
+
 [back to Contents](#-1)
